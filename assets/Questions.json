@@ -1,0 +1,104 @@
+{
+  "questions": [
+    {
+      "questionText": "1. What is the primary purpose of the Bloc library in Flutter?",
+      "options": [
+        "A. To manage UI widgets directly",
+        "B. To handle network requests efficiently",
+        "C. To simplify navigation between screens",
+        "D. To manage application state"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "questionText": "2. Which of the following concepts is central to Bloc state management?",
+      "options": [
+        "A. Streams",
+        "B. Widgets",
+        "C. Gestures",
+        "D. Navigators"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "questionText": "3. How does a Bloc emit new states to the UI?",
+      "options": [
+        "A. By calling the setState() method",
+        "B. By using the Navigator class",
+        "C. By yielding values in the mapEventToState method",
+        "D. By directly updating the widget tree"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "questionText": "4. What is the role of BlocBuilder in a Flutter app?",
+      "options": [
+        "A. To create and manage Bloc instances",
+        "B. To listen to state changes and rebuild UI accordingly",
+        "C. To handle user interactions and events",
+        "D. To navigate between different screens"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "questionText": "5. Which of the following is a key difference between Bloc and Cubit?",
+      "options": [
+        "A. Cubits are more complex than Blocs",
+        "B. Blocs use streams, while Cubits do not",
+        "C. Cubits are only used for simple state management",
+        "D. Blocs cannot be tested easily"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "questionText": "6. When should you consider using a BlocProvider?",
+      "options": [
+        "A. To make a Bloc instance available to child widgets",
+        "B. To manage the lifecycle of a Bloc",
+        "C. To test a Bloc in isolation",
+        "D. To create a new Bloc instance"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "questionText": "7. What is the purpose of the emit() method in a Bloc?",
+      "options": [
+        "A. To send events to the Bloc",
+        "B. To update the current state",
+        "C. To trigger a rebuild of the UI",
+        "D. To dispose of the Bloc"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "questionText": "8. How can you handle asynchronous operations within a Bloc?",
+      "options": [
+        "A. By using the async and await keywords",
+        "B. By using the FutureBuilder widget",
+        "C. By using the StreamBuilder widget",
+        "D. All of the above"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "questionText": "9. What is the recommended way to test Blocs in Flutter?",
+      "options": [
+        "A. Using unit tests",
+        "B. Using integration tests",
+        "C. Using widget tests",
+        "D. All of the above"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "questionText": "10. What are some benefits of using Bloc for state management?",
+      "options": [
+        "A. Improved testability",
+        "B. Better separation of concerns",
+        "C. Enhanced code readability",
+        "D. All of the above"
+      ],
+      "correctAnswer": 3
+    }
+  ]
+}
