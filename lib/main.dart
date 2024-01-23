@@ -1,13 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:quiz_app/blocs/QuizBloc.dart';
-import 'package:quiz_app/blocs/QuizEvent.dart';
+import 'package:quiz_app/blocs/quiz_bloc.dart';
 
-import 'QuestionScreen.dart';
+import 'question_screen.dart';
 
 void main() {
   runApp(BlocProvider(
-    create: (context) => QuizBloc(),
+    create: (context) => QuizCubit(),
     child: const MaterialApp(
       home: MyApp(),
       debugShowCheckedModeBanner: false,
@@ -30,7 +29,7 @@ class MyApp extends StatelessWidget {
           Center(
               child: ElevatedButton(
             onPressed: () {
-              context.read<QuizBloc>().add(StartQuizEvent());
+              context.read<QuizCubit>().startQuiz();
               Navigator.of(context).pushReplacement(MaterialPageRoute(
                   builder: (context) => const QuestionScreen()));
             },

@@ -2,15 +2,14 @@ import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:quiz_app/blocs/QuizBloc.dart';
-import 'package:quiz_app/main.dart';
+import 'package:quiz_app/blocs/quiz_bloc.dart';
 
 class ScoreScreen extends StatelessWidget {
   const ScoreScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    final score = context.read<QuizBloc>().score;
+    final score = context.read<QuizCubit>().score;
     return Scaffold(
       appBar: AppBar(
         title: const Text('Flutter Quiz'),
